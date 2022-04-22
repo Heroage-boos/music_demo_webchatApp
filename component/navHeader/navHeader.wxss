@@ -1,0 +1,33 @@
+/* component/navHeader/navHeader.wxss */
+/*  <view class="nav-hander-con">
+ <view  class="hader-con">icon</view>
+ <input  class="hander-ipt" type="text">search</input>
+ <view  class="hander-music-logo">music</view>
+ </view>
+ */
+ .nav-hander-con{
+   display: flex;
+   justify-content: space-between;
+   border:solid 1px rebeccapurple;
+   padding:5rpx 10rpx 5rpx 10rpx;
+ }
+.hader-con{
+  width:50rpx;
+  height:50rpx;
+  border:solid 1px #ccc;
+  border-radius: 50%;
+/*   background-image:url("/static/iconfont/images/video/video.jpg") */
+}
+.hander-ipt{
+ width:80%;
+ height:50rpx;
+ border:solid 1px #ccc;
+ color:red;
+ text-align: center;
+}
+.hander-music-logo{
+  width:50rpx;
+  height:50rpx;
+  border:solid 1px red;
+  border-radius: 50%;
+}

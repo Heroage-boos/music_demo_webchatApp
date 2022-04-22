@@ -1,0 +1,23 @@
+/* component/navIndex/navIndex.wxss */
+
+ .recommend-title {
+  padding-left: 20rpx;
+}
+.recommend-other .other-item {
+  border: solid 1px black;
+}
+
+ .recommend-other {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  padding-right: 40rpx;
+}
+ .recommend-other .other-item {
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  
+}
+
+ .recommend-other  .other-text {
+  padding-left: 10px;
+}

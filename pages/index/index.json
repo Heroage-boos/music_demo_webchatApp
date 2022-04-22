@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navIndex":"../component/navIndex/navIndex"
+
+  }
+}

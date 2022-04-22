@@ -1,0 +1,30 @@
+<!--  pages/song/song.wxml -->
+<view class="songContainer {{isplay?'isplay':''}}"><!-- isplay -->
+  <text>{{songs.name}}</text>
+  <view class="keng"></view>
+  <image class="needle" src="/static/images/song/needle.png"></image>
+  <view class="discContainer">
+    <image class="disc" src="/static/images/song/disc.png"></image>
+    <image class="bigImg" src="{{songs.al.picUrl}}"></image>
+  </view>
+
+  <!-- 进度条区域 -->
+  <view class="barContainer">
+    <text class="currentTime">{{updateTime}}</text>
+    <view class="wrap" bindtap="progressBar">
+      <view class="inner" style="width:{{bofangTime}}%">
+        <view class="point"></view>
+      </view>
+    </view>
+    <text class="durationTime">{{songTime}}</text>
+  </view>
+
+  <!-- 音乐控制器 -->
+  <view class="musicControl">
+    <text class="iconfont icon-iconsMusicyemianbofangmoshiShuffle" ></text>
+    <text class="iconfont icon-shangyishou" id="pre" bindtap="switchMusic"></text>
+    <text class="iconfont big {{isplay?'icon-zanting':'icon-bofang'}}"   bindtap="musicPlay"></text>
+    <text class="iconfont icon-next" id="next"  bindtap="switchMusic"></text>
+    <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList"></text>
+  </view>
+</view>

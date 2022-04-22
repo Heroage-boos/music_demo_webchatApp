@@ -1,0 +1,132 @@
+/**index.wxss**/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperImg {
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-index {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-index .nav-item {
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.nav-index .nav-item .nav-item-icon {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+}
+
+.recommend {
+  height: 420rpx;
+  margin-top: 40rpx;
+}
+
+
+
+
+.recommend .recommend-view {
+  display: flex;
+  overflow: hidden;
+  height: 450rpx;
+}
+
+.recommend .recommend-view .recommend-column {
+  width: 200rpx;
+  height: 300rpx;
+  word-wrap: break-word;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  margin: 15rpx 20rpx 10rpx 20rpx;
+}
+
+
+.recommend .recommend-view .recommend-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recommend .recommend-view .recommend-column image {
+  border-radius: 8px 8px 8px 8px;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.recommend .recommend-view .recommend-column text {
+  text-align: left;
+  /* 单行文本超出隐藏
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis; *//*   1、开启 webkit-box盒模型 */
+  display: -webkit-box;
+  /*   2.显示有几列 */
+  -webkit-line-clamp: 2;
+  /* 3.按什么方法省略 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.index-top .top-view {
+  display: flex;
+  margin: 0rpx 50rpx 0rpx 0rpx;
+  height: 400rpx;
+  padding-left: 20rpx;
+}
+
+.index-top .top-view .top-column {
+  /* background-color: royalblue; */
+}
+
+.index-top  .top-other {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40rpx;
+}
+
+.index-top  .top-other .other-item {
+  border: solid 1px black;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+}
+
+.index-top .top-view .top-list {
+  border: solid 1px red;
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0rpx 15rpx 0rpx;
+}
+
+.index-top .top-view .top-list .list-index {
+  margin-left: 40rpx;
+}
+
+.index-top .top-view .top-list .list-musicname {
+  margin-left: 50rpx;
+ /*  单行溢出隐藏 */
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+}
+
+.index-top .top-view .top-list image {
+  width: 100rpx;
+  height: 100rpx;
+ /*  不压缩 */
+  flex-shrink:inherit;
+}

@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="indexContainer">
+  <swiper class="indexSwiper" indicator-dots="true" indicator-color="xxx" circular="true" autoplay="true">
+    <swiper-item class="swiperImg" wx:for="{{banners}}" wx:key="id">
+      <image class="image" src="{{item.pic}}"></image>
+    </swiper-item>
+
+  </swiper>
+  <view class="nav-index">
+    <view class="nav-item" bindtap="toRecommendSong">
+      <view class="iconfont icon-meirituijian- nav-item-icon"> </view>
+      <text>每日推荐</text>
+    </view>
+    <view class="nav-item">
+      <view class="iconfont icon-gedan1 nav-item-icon"> </view>
+      <text>歌单</text>
+    </view>
+    <view class="nav-item">
+      <view class="iconfont icon-icon-ranking nav-item-icon"> </view>
+      <text>排行榜</text>
+    </view>
+    <view class="nav-item">
+      <view class="iconfont icon-diantai nav-item-icon"> </view>
+      <text>电台</text>
+    </view>
+    <view class="nav-item">
+      <view class="iconfont icon-zhiboguankanliangbofangsheyingshexiangjixianxing nav-item-icon"> </view>
+      <text>直播</text>
+    </view>
+  </view>
+  <view class="recommend">
+
+    <!--  推荐新歌 -->
+    <navIndex title="推荐新歌" title2="为你精推荐" more="查看更多"></navIndex>
+
+    <scroll-view class="recommend-view" enable-flex="true" scroll-x="true">
+      <view class="recommend-column" wx:for="{{personalized}}" vx:key="id">
+        <image src="{{item.picUrl}}"></image>
+        <text>{{item.name}}</text>
+      </view>
+
+    </scroll-view>
+  </view>
+  <!--  排行榜开始 -->
+  <view class="index-top">
+    <!--  推荐新歌 -->
+    <navIndex title="排行榜" title2="热门风向标" more="查看更多"></navIndex>
+    <swiper class="top-view" snap-to-edge="3" next-margin="110rpx">
+      <swiper-item class="top-column" wx:for="{{playlist}}" wx:key="id">
+        <text class="top-column-title">{{item.name}}</text>
+        <view class="top-list" wx:for-item="tck"  wx:for="{{item.tracks}}" wx:key="name">
+          <image class="list-img" src="{{tck.al.picUrl}}"></image>
+          <text class="list-index">{{index+1}}</text>
+          <text class="list-musicname">{{tck.al.name}}</text>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

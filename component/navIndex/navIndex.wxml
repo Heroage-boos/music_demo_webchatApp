@@ -1,0 +1,8 @@
+<!--component/navIndex/navIndex.wxml-->
+   <view class="recommend-title">
+      <text>{{title}}</text>
+    </view>
+    <view class="recommend-other">
+      <text class="other-text">{{title2}}</text>
+      <text class="other-item">{{more}}</text>
+    </view>

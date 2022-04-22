@@ -1,0 +1,6 @@
+
+ <view class="nav-hander-con">
+ <view  class="hader-con">icon</view>
+ <input  focus="true" class="hander-ipt" type="text" value="光辉岁月"></input>
+ <view  class="hander-music-logo">music</view>
+ </view>
